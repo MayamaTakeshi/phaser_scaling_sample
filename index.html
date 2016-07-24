@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Test Hello Phaser</title>
+    <script src="bower_components/phaser/build/phaser.js"></script>
+    <script src="Boot.js"></script>
+    <script src="main.js"></script>
+	<style>
+		/* http://stackoverflow.com/questions/16637031/completely-disable-scrolling-of-webpage */
+		html, body {
+			height: 100%;
+		}
+		div {
+			height: 100%;
+			overflow: hidden;
+		}
+
+		body {
+			overflow: hidden;
+		}
+
+	</style>
+	<script>
+/*
+window.addEventListener("keydown", function(e) {
+    // space, page up, page down and arrow keys:
+    if([32, 33, 34, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+    }
+}, false);
+*/
+	</script>
+</head>
+<body>
+	<div>
+   		<div id="content"></div>
+	</div>
+</body>
+</html>
