@@ -1,8 +1,6 @@
 How to test it.
 
 npm install typescript -g
-npm install bower -g
-bower install
 tsc Boot.ts 
 firefox index.html 
 
