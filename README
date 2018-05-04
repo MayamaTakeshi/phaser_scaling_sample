@@ -1,6 +1,8 @@
-How to test it.
+How to test it:
 
 npm install typescript -g
-tsc Boot.ts 
+tsc Boot.ts
 firefox index.html 
 
+
+When changing code, beware of chrome caching the files.

@@ -1,4 +1,4 @@
-///<reference path="bower_components/phaser/typescript/phaser.d.ts"/>
+///<reference path="node_modules/phaser/typescript/phaser.d.ts"/>
 
 module Utils {
 
@@ -51,13 +51,14 @@ module Game {
 		resize_counter: number = 0;
  
         preload() {
-            // preload something
-        }
+            this.load.image('sky', 'assets/space3.png');
+        };
 
 		last_inner_width: number = 0;
 		last_inner_height: number = 0;
  
         create() {
+            this.add.image(0, 0, 'sky');
             this.game.scale.fullScreenTarget = this.parentElement;
             this.game.scale.scaleMode = Phaser.ScaleManager.USER_SCALE;
             this.game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL; // Important
@@ -85,7 +86,7 @@ module Game {
 			});
 			*/
 
-            this.game.state.start('Preload', true, false);
+            //this.game.state.start('preload', true, false);
         }
     }
  
