@@ -1,8 +1,11 @@
 How to test it:
 
-npm install typescript -g
-tsc Boot.ts
-firefox index.html 
+  npm install
+  npx typescript Boot.ts
+
+Then start http server:
+  python -m SimpleHTTPserver
+  And open http://localhost:8000/index.html
 
 
 When changing code, beware of chrome caching the files.
