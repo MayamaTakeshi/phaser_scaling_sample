@@ -4,7 +4,7 @@ How to test it:
   npx typescript Boot.ts
 
 Then start http server:
-  python -m SimpleHTTPserver
+  python -m SimpleHTTPServer
   And open http://localhost:8000/index.html
 
 
